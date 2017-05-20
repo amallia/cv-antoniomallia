@@ -1,0 +1,156 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.86]{geometry}
+\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Antonio}{Mallia}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+%\address{via Guido Guinizzelli, 15}{92100 Agrigento}{Italy}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+39~328~7444631}                   % optional, remove / comment the line if not wanted
+\phone[mobile]{+44~7598~951472}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{me@antoniomallia.it}                               % optional, remove / comment the line if not wanted
+\homepage{www.antoniomallia.it}                         % optional, remove / comment the line if not wanted
+\linkedin{it.linkedin.com/in/antoniomallia}                         % optional, remove / comment the line if not wanted
+\skype{antonio.mallia}                         % optional, remove / comment the line if not wanted
+\github{github.com/amallia}                         % optional, remove / comment the line if not wanted
+
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Work experience}
+\cventry{2016--present}{Software Engineer}{Bloomberg L.P, London}{}{}{Collaboration platform.\newline{}%
+Working on a distributed architecture, ensuring reliability, scalability and performance. Working in an Agile team, doing software development/testing, code optimization and code review. \\Joined a full-time Software Engineering Training Programme. Learned about Bloomberg’s proprietary technologies, how to work with large volumes of real-time data, and how to develop software in a large-scale, fast-paced environment. Acquire the confidence and skill set to write stable code that is easy to maintain and debug.
+}
+
+\cventry{2013--2016}{Software Engineer}{NIC .it - CNR}{}{}{Worked for the Italian National Research Council on projects for the ccTLD .it Registry.\newline{}%
+Detailed achievements:%
+\begin{itemize}%
+\item Developed several features of the main application (RAIN-NG) used by NIC .it domain name registrars. Focused on database query optimization, export of data, third-party web-services integration.  
+\item Co-operated on the development of an internal application (jBilling), used by administrative staff to manage contracts and billing system. Focused on UX enhancement, data presentation and export.
+\item Co-operated on the development of an ETL system and presentation of data using interactive charts.
+\item Developed a UI library for JavaServer Faces (JSF) application and integration with the main NIC applications.
+\item Planned and developed an e-voting system (Endorse-Me) used for the election of the steering committee.
+\end{itemize}}
+\cventry{2011--present}{Software Engineer}{Self-Employed}{}{}{
+Detailed achievements:%
+\begin{itemize}%
+\item Planned and developed a web application providing web privacy and anonymity tools: user management, load balancing, payment integration (Paypal, Bitcoin, credit card gateway, phone). Design of a RESTful API for third-party integration.
+\item Mail server configuration and administration. 
+\item Google Chrome and Mozilla Firefox extension development to integrate features of a web application.
+\item Planned and developed a CMS to perform feed aggregation using parsing technics and categorisation.
+\item Software prototyping of a crawling and parsing system of an airline company to extract flight information and post-analysis.
+\item Developed a ad-hoc download manager software, including packaging for Windows and OS X.
+\item Owned an Italian blog network about technology widely-read and realised using Wordpress. Development of several plugins, integration with advertising agency web services. System administration main focused on performance optimisation.
+\end{itemize}}
+
+\section{Education} 
+\cventry{2014--2015}{Master’s degree in Computer Science}{University of Pisa}{}{\scriptsize 110/110 cum laude}{This Master's Degree in Computer Science provided me a solid, in-depth background, in line with the innovation needs of the informatics field. The courses attended increased my knowledge portfolio, in both the theoretical and practical aspect.\newline{}%
+Relevant exams:%
+\begin{itemize}%
+  \item Advanced Algorithms 
+  \item Advanced Database Systems
+  \item Advanced Programming
+  \item Computational Models
+  \item Distributed Systems: paradigms and models
+  \item Numerical Methods and Optimization
+  \item Principle of Programming Languages
+\end{itemize}
+Thesis: Efficient top-k document retrieval with two level indexes}  % arguments 3 to 6 can be left empty
+
+\cventry{2012--2013}{Erasmus Programme}{University of Essex}{}{}{This experience enabled me to understand the value of studying and working in an international environment. Exploring practice-oriented learning methods improved my professional skills.\newline{}%
+Relevant exams:%
+\begin{itemize}%
+  \item Programming in Java 
+  \item Web Technologies \& XML
+  \item Large Scale Software Development \& Extreme Programming
+  \item Network Laboratory
+  \item Photonics Networks \& Devices
+  \item Mobile Robotics
+  \item Programming Embedded Systems
+  \item Electronic System Design \& Integration
+\end{itemize}}
+\cventry{2008--2012}{Bachelor’s degree in Electronic Engineering}{University of Pisa}{}{}{I acquired knowledge of methodological aspects of mathematics and basic disciplines to understand and provide appropriate solutions to engineering problems. During the Curriculum in Electronic Engineering I developed professionally with sound fundamental and multidisciplinary skills ranging from electronics, circuit theory, systems theory, computer science, communications, control theory, economics, electromagnetism, nanoelectronics.}
+
+\section{Languages}
+\cvitemwithcomment{Italian}{Native}{}
+\cvitemwithcomment{English}{Professional working proficiency}{IELTS Certificate (2012)}
+
+\section{Computer skills}
+\cvitem{OS:}{Mac OS X, Linux and Windows.}
+\cvitem{Programming:}{Java, C++, C, Python, Javascript, PHP.}
+\cvitem{Database:}{MySQL, MongoDB, SQLite, Redis.}
+\cvitem{Web Design:}{HTML5, CSS3, jQuery.}
+\cvitem{Development Environment:}{Eclipse, Sublime Text, PyCharm, IntelliJ IDEA, Clion, Vim.}
+\cvdoubleitem{Project Management:}{SVN, Git, Trac, Gitlab.}{Continuous Integration:}{Jenkins, Travis CI.}
+\cvdoubleitem{Web Server:}{Apache, Lighttpd, Jetty, JBoss AS.}{Container engine:}{Docker.}
+\cvdoubleitem{Framework}{Seam, Dropwizard, SlimPHP.}{Mail:}{Postfix, Dovecot.}
+\cvdoubleitem{Documentation:}{Markdown, Latex.}{CMS:}{Wordpress, Ghost.}
+
+\section{Invited Talks and Tutorials}
+\cventry{04/2016}{Backend for Android Developers	}{Droidcon Italy}{Turin}{}{}
+
+\section{Personal skills}
+\cvitem{Leadership}{Good experience in team management acquired training and guiding a blog network editorial staff.}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
