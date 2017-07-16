@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -57,20 +57,27 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 \section{Work experience}
-\cventry{2016--present}{Software Engineer}{Bloomberg L.P, London}{}{}{Collaboration platform.\newline{}%
-Working on a distributed architecture, ensuring reliability, scalability and performance. Working in an Agile team, doing software development/testing, code optimization and code review. \\Joined a full-time Software Engineering Training Programme. Learned about Bloomberg’s proprietary technologies, how to work with large volumes of real-time data, and how to develop software in a large-scale, fast-paced environment. Acquire the confidence and skill set to write stable code that is easy to maintain and debug.
-}
-
-\cventry{2013--2016}{Software Engineer}{NIC .it - CNR}{}{}{Worked for the Italian National Research Council on projects for the ccTLD .it Registry.\newline{}%
+\cventry{2016--present}{Software Engineer}{Bloomberg L.P}{London}{United Kingdom}{Working in the Collaboration Frameworks team on a distributed architecture, and ensuring reliability, scalability and performance. Working in an Agile team, doing software development/testing, code optimization and code review. Learned how to work with large volumes of real-time data, and how to develop software in a large-scale, fast-paced environment. \\
 Detailed achievements:%
 \begin{itemize}%
-\item Developed several features of the main application (RAIN-NG) used by NIC .it domain name registrars. Focused on database query optimization, export of data, third-party web-services integration.  
-\item Co-operated on the development of an internal application (jBilling), used by administrative staff to manage contracts and billing system. Focused on UX enhancement, data presentation and export.
+\item Involved in the design and development of a tagging and sharing framwork.
+\item Designed and refactored code following the microservice paradigm.
+\item Created a Continuous Integration infrastructure to automate build, tests and deployment.
+\item Migrated the build system to use the more modern CMake.
+\item Introduced static code analysis and code coverage to run on the codebase.
+\item Investigated and debugged production environment issues caused by software defects, system configuration errors, and data inconsistencies.
+\end{itemize}}
+
+\cventry{2013--2016}{Software Engineer}{NIC .it - National Research Council}{Pisa}{Italy}{Worked for the Italian National Research Council on projects for the ccTLD .it Registry.\newline{}%
+Detailed achievements:%
+\begin{itemize}%
+\item Developed several features of the main application used by NIC .it domain name registrars. Focused on database query optimization, export of data, third-party web-services integration.  
+\item Co-operated on the development of an internal application, used by administrative staff to manage contracts and billing system. Focused on UX enhancement, data presentation and export.
 \item Co-operated on the development of an ETL system and presentation of data using interactive charts.
 \item Developed a UI library for JavaServer Faces (JSF) application and integration with the main NIC applications.
-\item Planned and developed an e-voting system (Endorse-Me) used for the election of the steering committee.
+\item Planned and developed an e-voting system used for the election of the Registry steering committee.
 \end{itemize}}
-\cventry{2011--present}{Software Engineer}{Self-Employed}{}{}{
+\cventry{2011--present}{Software Engineer}{Self-Employed}{Remote}{}{
 Detailed achievements:%
 \begin{itemize}%
 \item Planned and developed a web application providing web privacy and anonymity tools: user management, load balancing, payment integration (Paypal, Bitcoin, credit card gateway, phone). Design of a RESTful API for third-party integration.
@@ -84,6 +91,7 @@ Detailed achievements:%
 
 \section{Education} 
 \cventry{2014--2015}{Master’s degree in Computer Science}{University of Pisa}{}{\scriptsize 110/110 cum laude}{This Master's Degree in Computer Science provided me a solid, in-depth background, in line with the innovation needs of the informatics field. The courses attended increased my knowledge portfolio, in both the theoretical and practical aspect.\newline{}%
+\textbf{Thesis}: \em{Efficient top-k document retrieval with two level indexes}. Supervisor: Prof. Rossano Venturini \\
 Relevant exams:%
 \begin{itemize}%
   \item Advanced Algorithms 
@@ -93,8 +101,7 @@ Relevant exams:%
   \item Distributed Systems: paradigms and models
   \item Numerical Methods and Optimization
   \item Principle of Programming Languages
-\end{itemize}
-Thesis: Efficient top-k document retrieval with two level indexes}  % arguments 3 to 6 can be left empty
+\end{itemize}}  
 
 \cventry{2012--2013}{Erasmus Programme}{University of Essex}{}{}{This experience enabled me to understand the value of studying and working in an international environment. Exploring practice-oriented learning methods improved my professional skills.\newline{}%
 Relevant exams:%
@@ -132,6 +139,8 @@ Relevant exams:%
 
 \section{Invited Talks and Tutorials}
 \cventry{04/2016}{Backend for Android Developers	}{Droidcon Italy}{Turin}{}{}
+\cventry{10/2017}{C++: unexpected behaviour}{Topconf}{Düsseldorf}{}{}
+\cventry{11/2017}{C++: unexpected behaviour}{Meeting C++}{Berlin}{}{}
 
 \section{Personal skills}
 \cvitem{Leadership}{Good experience in team management acquired training and guiding a blog network editorial staff.}
