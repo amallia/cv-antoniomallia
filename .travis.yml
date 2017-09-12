@@ -3,7 +3,7 @@ before_install:
 - sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
 script:
 - mkdir _build
-- pdflatex -output-directory _build ./AntonioMalliaCV.tex
+- pdflatex -output-directory _build ./tex/AntonioMalliaCV.tex
 deploy:
   provider: releases
   api_key:
