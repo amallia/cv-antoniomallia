@@ -4,7 +4,9 @@ before_install:
 script:
 - cd tex
 - mkdir _build
-- pdflatex -output-directory ./_build ./AntonioMalliaCV.tex
+- pdflatex -interaction=nonstopmode -output-directory=./_build AntonioMalliaCV.tex
+- bibtex ./_build/AntonioMalliaCV
+- pdflatex -interaction=nonstopmode -output-directory=./_build AntonioMalliaCV.tex
 deploy:
   provider: releases
   api_key:
