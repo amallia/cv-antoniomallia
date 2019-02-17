@@ -18,7 +18,7 @@ deploy:
       tags: true
       branch: master
   - provider: pages
-    repo: amallia.github.io
+    repo: amallia/amallia.github.io
     local-dir: uploads/
     skip-cleanup: true
     github-token: 
