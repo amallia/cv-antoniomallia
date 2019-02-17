@@ -7,7 +7,7 @@ script:
 - pdflatex -interaction=nonstopmode -output-directory=./_build AntonioMalliaCV.tex
 - bibtex ./_build/AntonioMalliaCV
 - pdflatex -interaction=nonstopmode -output-directory=./_build AntonioMalliaCV.tex
-- mkdir -p deploy
+- mkdir deploy
 - cp ./_build/AntonioMalliaCV.pdf ./deploy
 deploy:
   - provider: releases
@@ -20,7 +20,7 @@ deploy:
       tags: true
       branch: master
   - provider: pages
-    local_dir: deploy/
+    local_dir: ./deploy/
     skip-cleanup: true
     github-token: 
           secure: n1uBn6U8EPoVhDWND6fApBAFQnAhtUalfF0vbhDtmcgOPLWFoUZ5SCPVAJFPIQerxb+KqyyrnOydULTbegHQFWUQe50WUEvIjF0FApgXBTIznLuGJKCytDayX0o6Wk/w6oUTLxY/XbW1vk/Sn8VaW6hqBlSOiNmK4l+7ZYGvg4LI0i+O5sFYmp+8oIgkLu9kCAJ6biAz+EzUPJMu8ZeQ5LG+1MgOF8xJZBivcPrNwUyQ78YmvrPOkcW3QArqzoCT8I8oLSQyibaEpRfBgXGXEq6pziOUPitAO4n45dqXPvEJfeszcYKiyEzlnmqavaFqz0qa3Zyybc0N+lzOpqBiwc+K7t6j6PBKYy+wUkDG/fPNYhd5xe88deyprqT/cpHUVmhbpo7C6XFTJBhmxB2d+bs7E+fsTXxt8XC+eiqTcjC2ISbU2iXFnCeU/xZ9B3TRDchQzk89JF05R64sXA5v11wSI1TaVxSyVbDCygzJupC4xcH0k2it17xONaRVO6SnXjEDiJ1HU2o1UkBsg5iGnsMLHAPGQPBc9K2tBBkxC6/wXMvAq6Fl6Y0To4ZKV8BEnR9mclvLWkHaP6a0J2AbX5qIf1FeS4N/w2iatoyYezCf8ZadB5RQ1KhX6SRglm38mwHgY9Fj/8rWt6M67ca+wHouYn4kJZXzHrib4zNCTfQ=
