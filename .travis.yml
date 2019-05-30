@@ -1,7 +1,7 @@
 before_install:
 - sudo apt-get update
-- sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
-script:
+- sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended cm-super
+script: 
 - cd tex
 - mkdir _build
 - pdflatex -interaction=nonstopmode -output-directory=./_build AntonioMalliaCV.tex
