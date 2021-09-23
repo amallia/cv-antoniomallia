@@ -1,4 +1,4 @@
-# Antonio Mallia's CV [![Build Status](https://travis-ci.org/amallia/cv-antoniomallia.svg)](https://travis-ci.org/amallia/cv-antoniomallia)
+# Antonio Mallia's CV [![Build Status](https://app.travis-ci.com/amallia/cv-antoniomallia.svg?branch=master)](https://app.travis-ci.com/amallia/cv-antoniomallia)
 :page_facing_up: Repository containing Antonio Mallia's CV
 
 ## Build
