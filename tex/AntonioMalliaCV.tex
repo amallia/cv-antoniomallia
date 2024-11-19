@@ -14,9 +14,11 @@
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
+
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
 
 % adjust the page margins
 \usepackage[scale=0.9]{geometry}
@@ -52,14 +54,16 @@
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
+
 \begin{document}
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 \section{Work experience}
-\cventry{Nov 2023--present}{Senior Research Scientist}{Pinecone}{Remote}{}{}
-\cventry{Sept 2021--Oct 2023}{Applied Scientist}{Amazon, Alexa AI}{Remote}{}{Working in the Alexa Search team.  \\
-}
+\cventry{2023--present}{Senior Research Scientist}{Pinecone}{Remote}{}{
+Led the production integration of DeepImpact, facilitating engineers in implementing research-driven algorithms and techniques to support sparse retrieval at scale. Delivered impactful modeling projects, culminating in the launch of two new company products. Mentored an intern, leading to a successful full-time hire. Authored and disseminated research in top-tier conferences. Contributed to Pinecone’s success in dominating all four tracks of the NeurIPS 2023 Competition Track: Big-ANN. Engaged in advanced internal initiatives, including graph-based ANN, vector-enabled Transformers, multi-vector retrieval, and knowledge sharing through internal talks and seminars.}
+% \cventry{Sept 2021--Oct 2023}
+\cventry{2021--2023}{Applied Scientist}{Amazon, AGI}{Remote}{}{Drove advancements in next-generation web search technologies for Amazon AGI, driving innovation in retrieval systems. Integrated cutting-edge research, including DeepImpact, into production to enhance search relevance and scalability. Enabled retrieval at a tens-of-billions scale, supporting high-demand applications across multiple products. \\}
 \cventry{2018--2022}{PhD Fellow}{New York University}{New York}{US}{Teaching Assistant for Web Search Engines (Fall 2018)\\
 }
 \cventry{Jun--Aug 2019}{Applied Scientist Intern}{Amazon}{Barcelona}{Spain}{Working in the Product Search team on improving efficiency and relevance.  \\
@@ -98,7 +102,10 @@ Detailed achievements:%
 \end{itemize}}
 
 \section{Education}
-\cventry{2018--2022}{Ph.D. Program in Computer Science}{New York University}{}{}{Pursuing a Ph.D. with a focus on advancing efficiency in Information Retrieval for large-scale systems.}
+\cventry{2018--2022}{Ph.D. Program in Computer Science}{New York University}{}{}{Pursuing a Ph.D. with a focus on advancing efficiency in Information Retrieval for large-scale systems.
+My research encompasses novel query processing algorithms, index compression, Learning-to-Rank, Learned Sparse Models, and reranking techniques.
+Initiated and led the development of PISA (Performant Indexes and Search for Academia), an experimental search engine that delivers efficient implementations of state-of-the-art text retrieval representations and algorithms. PISA has become a standard benchmark for evaluating efficiency in inverted index-based retrieval systems. \githubsocialsymbol{https://github.com/pisa-engine}
+}
 
 \cventry{2018--2020}{Master’s degree in Computer Science}{New York University}{}{}{
 Relevant exams:%
